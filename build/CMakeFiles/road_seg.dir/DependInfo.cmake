@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/tejus/Documents/vision/road-segmentation/src/main.cpp" "/home/tejus/Documents/vision/road-segmentation/build/CMakeFiles/road_seg.dir/src/main.cpp.o"
+  "/home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp" "/home/tejus/Documents/vision/road-segmentation/build/CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

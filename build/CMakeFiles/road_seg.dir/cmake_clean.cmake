@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/road_seg.dir/src/main.cpp.o"
+  "CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o"
   "road_seg.pdb"
   "road_seg"
 )

@@ -135,6 +135,30 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/roadSegmentor.o: src/roadSegmentor.cpp.o
+.PHONY : src/roadSegmentor.o
+
+# target to build an object file
+src/roadSegmentor.cpp.o:
+	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o
+.PHONY : src/roadSegmentor.cpp.o
+
+src/roadSegmentor.i: src/roadSegmentor.cpp.i
+.PHONY : src/roadSegmentor.i
+
+# target to preprocess a source file
+src/roadSegmentor.cpp.i:
+	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i
+.PHONY : src/roadSegmentor.cpp.i
+
+src/roadSegmentor.s: src/roadSegmentor.cpp.s
+.PHONY : src/roadSegmentor.s
+
+# target to generate assembly for a file
+src/roadSegmentor.cpp.s:
+	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s
+.PHONY : src/roadSegmentor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -147,6 +171,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/roadSegmentor.o"
+	@echo "... src/roadSegmentor.i"
+	@echo "... src/roadSegmentor.s"
 .PHONY : help
 
 

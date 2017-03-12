@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/tejus/Documents/vision/road-segmentation/build
 CMakeFiles/road_seg.dir/all:
 	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/depend
 	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles  1 2
 	@echo "Built target road_seg"
 .PHONY : CMakeFiles/road_seg.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/road_seg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/road_seg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/road_seg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles 0
 .PHONY : CMakeFiles/road_seg.dir/rule

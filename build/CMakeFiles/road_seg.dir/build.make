@@ -72,14 +72,39 @@ CMakeFiles/road_seg.dir/src/main.cpp.o.provides: CMakeFiles/road_seg.dir/src/mai
 
 CMakeFiles/road_seg.dir/src/main.cpp.o.provides.build: CMakeFiles/road_seg.dir/src/main.cpp.o
 
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o: CMakeFiles/road_seg.dir/flags.make
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o: ../src/roadSegmentor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o -c /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp
+
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp > CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i
+
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s
+
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires:
+.PHONY : CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires
+
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.provides: CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/road_seg.dir/build.make CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.provides.build
+.PHONY : CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.provides
+
+CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.provides.build: CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o
+
 # Object files for target road_seg
 road_seg_OBJECTS = \
-"CMakeFiles/road_seg.dir/src/main.cpp.o"
+"CMakeFiles/road_seg.dir/src/main.cpp.o" \
+"CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o"
 
 # External object files for target road_seg
 road_seg_EXTERNAL_OBJECTS =
 
 road_seg: CMakeFiles/road_seg.dir/src/main.cpp.o
+road_seg: CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o
 road_seg: CMakeFiles/road_seg.dir/build.make
 road_seg: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 road_seg: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
@@ -119,6 +144,7 @@ CMakeFiles/road_seg.dir/build: road_seg
 .PHONY : CMakeFiles/road_seg.dir/build
 
 CMakeFiles/road_seg.dir/requires: CMakeFiles/road_seg.dir/src/main.cpp.o.requires
+CMakeFiles/road_seg.dir/requires: CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires
 .PHONY : CMakeFiles/road_seg.dir/requires
 
 CMakeFiles/road_seg.dir/clean:
