@@ -8,13 +8,14 @@ using namespace std;
 
 int main()
 {
-	Mat img=imread("../images/test1.png");
+	Mat img=imread("../images/test2.png");
   	imshow("input", img);
 
   	RoadSegmentor segmentor;
   	Mat output=segmentor.hsvThres(img);
 
   	imshow("road", output);
+  	imwrite("../images/output.png", output);
   	waitKey(0);
 
 	return 0;
