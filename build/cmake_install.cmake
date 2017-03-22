@@ -1,4 +1,4 @@
-# Install script for directory: /home/tejus/Documents/vision/road-segmentation
+# Install script for directory: /home/sanskar/opencv/Road_Seg/road-segmentation
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/tejus/Documents/vision/road-segmentation/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/sanskar/opencv/Road_Seg/road-segmentation/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/tejus/Documents/vision/road-segmentation/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/sanskar/opencv/Road_Seg/road-segmentation/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

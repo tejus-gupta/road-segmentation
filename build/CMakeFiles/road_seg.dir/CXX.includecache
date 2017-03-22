@@ -6,21 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/tejus/Documents/vision/road-segmentation/include/roadSegmentor.hpp
+/home/sanskar/opencv/Road_Seg/road-segmentation/include/roadSegmentor.hpp
 opencv/cv.h
-/home/tejus/Documents/vision/road-segmentation/include/opencv/cv.h
+/home/sanskar/opencv/Road_Seg/road-segmentation/include/opencv/cv.h
 opencv2/highgui/highgui.hpp
 -
 bits/stdc++.h
+-
+iostream
+-
+opencv2/core/core.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+time.h
+-
+limits.h
 -
 
-/home/tejus/Documents/vision/road-segmentation/src/main.cpp
+/home/sanskar/opencv/Road_Seg/road-segmentation/src/main.cpp
 opencv/cv.h
-/home/tejus/Documents/vision/road-segmentation/src/opencv/cv.h
+/home/sanskar/opencv/Road_Seg/road-segmentation/src/opencv/cv.h
 opencv2/highgui/highgui.hpp
 -
 bits/stdc++.h
 -
+opencv2/imgproc/imgproc.hpp
+-
 ../include/roadSegmentor.hpp
-/home/tejus/Documents/vision/road-segmentation/include/roadSegmentor.hpp
+/home/sanskar/opencv/Road_Seg/road-segmentation/include/roadSegmentor.hpp
 

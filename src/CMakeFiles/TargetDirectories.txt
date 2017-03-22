@@ -1,0 +1,1 @@
+/home/sanskar/opencv/Road_Seg/road-segmentation/src/CMakeFiles/road_seg.dir

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejus/Documents/vision/road-segmentation
+CMAKE_SOURCE_DIR = /home/sanskar/opencv/Road_Seg/road-segmentation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejus/Documents/vision/road-segmentation/build
+CMAKE_BINARY_DIR = /home/sanskar/opencv/Road_Seg/road-segmentation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/road_seg.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/road_seg.dir/flags.make
 
 CMakeFiles/road_seg.dir/src/main.cpp.o: CMakeFiles/road_seg.dir/flags.make
 CMakeFiles/road_seg.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sanskar/opencv/Road_Seg/road-segmentation/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/road_seg.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/road_seg.dir/src/main.cpp.o -c /home/tejus/Documents/vision/road-segmentation/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/road_seg.dir/src/main.cpp.o -c /home/sanskar/opencv/Road_Seg/road-segmentation/src/main.cpp
 
 CMakeFiles/road_seg.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/road_seg.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/tejus/Documents/vision/road-segmentation/src/main.cpp > CMakeFiles/road_seg.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sanskar/opencv/Road_Seg/road-segmentation/src/main.cpp > CMakeFiles/road_seg.dir/src/main.cpp.i
 
 CMakeFiles/road_seg.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/road_seg.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/tejus/Documents/vision/road-segmentation/src/main.cpp -o CMakeFiles/road_seg.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sanskar/opencv/Road_Seg/road-segmentation/src/main.cpp -o CMakeFiles/road_seg.dir/src/main.cpp.s
 
 CMakeFiles/road_seg.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/road_seg.dir/src/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/road_seg.dir/src/main.cpp.o.provides.build: CMakeFiles/road_seg.dir/s
 
 CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o: CMakeFiles/road_seg.dir/flags.make
 CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o: ../src/roadSegmentor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sanskar/opencv/Road_Seg/road-segmentation/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o -c /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o -c /home/sanskar/opencv/Road_Seg/road-segmentation/src/roadSegmentor.cpp
 
 CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp > CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sanskar/opencv/Road_Seg/road-segmentation/src/roadSegmentor.cpp > CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.i
 
 CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/tejus/Documents/vision/road-segmentation/src/roadSegmentor.cpp -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sanskar/opencv/Road_Seg/road-segmentation/src/roadSegmentor.cpp -o CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.s
 
 CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires:
 .PHONY : CMakeFiles/road_seg.dir/src/roadSegmentor.cpp.o.requires
@@ -152,6 +152,6 @@ CMakeFiles/road_seg.dir/clean:
 .PHONY : CMakeFiles/road_seg.dir/clean
 
 CMakeFiles/road_seg.dir/depend:
-	cd /home/tejus/Documents/vision/road-segmentation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejus/Documents/vision/road-segmentation /home/tejus/Documents/vision/road-segmentation /home/tejus/Documents/vision/road-segmentation/build /home/tejus/Documents/vision/road-segmentation/build /home/tejus/Documents/vision/road-segmentation/build/CMakeFiles/road_seg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanskar/opencv/Road_Seg/road-segmentation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanskar/opencv/Road_Seg/road-segmentation /home/sanskar/opencv/Road_Seg/road-segmentation /home/sanskar/opencv/Road_Seg/road-segmentation/build /home/sanskar/opencv/Road_Seg/road-segmentation/build /home/sanskar/opencv/Road_Seg/road-segmentation/build/CMakeFiles/road_seg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/road_seg.dir/depend
 
