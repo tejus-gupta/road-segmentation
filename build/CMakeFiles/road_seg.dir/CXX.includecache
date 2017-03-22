@@ -36,3 +36,7 @@ opencv2/imgproc/imgproc.hpp
 ../include/roadSegmentor.hpp
 /home/sanskar/opencv/Road_Seg/road-segmentation/include/roadSegmentor.hpp
 
+/home/sanskar/opencv/Road_Seg/road-segmentation/src/roadSegmentor.cpp
+../include/roadSegmentor.hpp
+/home/sanskar/opencv/Road_Seg/road-segmentation/include/roadSegmentor.hpp
+
