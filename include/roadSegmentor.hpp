@@ -21,14 +21,17 @@ struct point
 
 class RoadSegmentor{
 public:
+  int ct;
   point *P;
   Mat img;
   int n,noc;
-
+  int* C;
 public:
-  void k_means(int* C);
-  void group(int* C);
-  int centre(int* C,int cen,int sumx,int sumy,int sumh,int sums);
+  void k_means();
+  void group();
+  int centre(int cen,int sumx,int sumy,int sumh,int sums);
+  int* initialize(Mat);
+  void write();
 };
 
 #endif /* _LANE_SEGMENTER_HPP_ */

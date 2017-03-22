@@ -10,9 +10,14 @@ int isvalid(Mat img,int i,int j)
   return 1;
 }
 
-void RoadSegmentor::k_means(int* C)
+void RoadSegmentor::k_means()
 {
-
+  ct++;
+  if(ct>50)
+    {
+      cout<<"Iterations="<<ct<<endl;
+      return;
+    }
   Mat cls(img.rows,img.cols,CV_8UC3,Scalar(0,0,0));
   int a=0,road=0;
   for(int k=0;k<noc;k++){
@@ -46,17 +51,17 @@ void RoadSegmentor::k_means(int* C)
   //   else cls.at<Vec3b>(P[i].x,P[i].y)={179,255,255};
   //   }  
 
-//  cvtColor(cls,cls,CV_HSV2BGR);
-  imshow("img",img);
-  imshow("cls",cls);
-  waitKey(100);
+
+  // imshow("img",img);
+  // imshow("cls",cls);
+  // waitKey(100);
 
 
 
 
 
   int sumx=0,sumy=0,count=0,sumh=0,sums=0;
-    group(C);
+    group();
     int flag=0;
   for(int i=0;i<noc;i++)
     {
@@ -78,14 +83,17 @@ void RoadSegmentor::k_means(int* C)
       sumh/=count;
       sums/=count;
       // cout<<sumx<<' '<<sumy<<' '<<sumh<<' '<<sums;
-      flag+=centre(C,i,sumx,sumy,sumh,sums);
+      flag+=centre(i,sumx,sumy,sumh,sums);
     }
   if(flag==noc-1)
-    return;
-   k_means(C);
+    {
+      cout<<endl<<"Iterations="<<ct<<endl;
+      return;
+    }
+   k_means();
 }
 
-void RoadSegmentor::group(int* C)
+void RoadSegmentor::group()
 {
   for(int i=0;i<n;i++)
     {
@@ -106,7 +114,7 @@ void RoadSegmentor::group(int* C)
     }
 }
 
-int RoadSegmentor::centre(int* C,int cen,int sumx,int sumy,int sumh,int sums)
+int RoadSegmentor::centre(int cen,int sumx,int sumy,int sumh,int sums)
 {
   int small=INT_MAX,min=0;
   for(int i=0;i<n;i++)
@@ -122,4 +130,69 @@ int RoadSegmentor::centre(int* C,int cen,int sumx,int sumy,int sumh,int sums)
     return 1;
   C[cen]=min;
   return 0;
+}
+
+int* RoadSegmentor::initialize(Mat img1)
+{
+  ct=0;
+  P=(point*)malloc(sizeof(point));
+  n=0;
+  cv::cvtColor(img1,img,CV_BGR2HSV);
+  // imshow("img1",img1);
+    for(int i=0;i<img.rows;i++)
+    {
+      for(int j=0;j<img.cols;j++)
+	{
+	  P=(point*)realloc(P,(n+1)*sizeof(point));
+	  P[n].h=2*img.at<Vec3b>(i,j)[0];
+	  P[n].s=img.at<Vec3b>(i,j)[1];
+	  P[n].x=i;
+	  P[n].y=j;
+	  P[n].parent=-1;
+	  n++;
+	  //cout<<P[n-1].h<<' '<<P[n-1].s<<' '<<P[n-1].x<<' '<<P[n-1].y<<endl;
+	  //waitKey(100);
+	}
+    }
+    C=new int[noc];
+    srand((unsigned)time(NULL));
+    for(int i=0;i<noc;i++)
+    {
+      int j=i-1,flag=0;
+      C[i]=rand()%n;
+      while(j>=0)
+	{
+	  if(C[i]==C[j])
+	    {
+	      flag=1;
+	      break;
+	    }
+	  j--;
+	}
+      if(flag)
+	i--;
+    }
+}
+
+void RoadSegmentor::write()
+{
+  Mat cls(img.rows,img.cols,CV_8UC3,Scalar(0,0,0));
+  cvtColor(cls,cls,CV_BGR2HSV);
+  for(int k=0;k<noc;k++)
+    {
+      for(int i=0;i<n;i++)
+  	{
+  	  if(P[i].parent==C[k])
+  	    {
+  	      for(int j=0;j<=2;j++)
+  		{
+  		  cls.at<Vec3b>(P[i].x,P[i].y)[j]=img.at<Vec3b>(P[C[k]].x,P[C[k]].y)[j];
+  		}
+  	    }
+  	}
+    }
+  cout<<"Written in images/output.png\n";
+  waitKey(1);
+  imwrite("../images/output.png",cls);
+
 }
