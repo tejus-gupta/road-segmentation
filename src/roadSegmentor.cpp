@@ -194,5 +194,6 @@ void RoadSegmentor::write()
   cout<<"Written in images/output.png\n";
   waitKey(1);
   imwrite("../images/output.png",cls);
-
+  imshow("Segmented",cls);
+  waitKey(0);
 }
