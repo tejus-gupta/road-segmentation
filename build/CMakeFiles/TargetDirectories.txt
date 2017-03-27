@@ -1,1 +1,0 @@
-/home/tejus/Documents/vision/road-segmentation/build/CMakeFiles/road_seg.dir
